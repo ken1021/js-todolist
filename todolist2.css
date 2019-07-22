@@ -200,8 +200,8 @@ ul{ margin:0;
 }
 p.text.popup-text-li{
     position: absolute;
-    left:80px;
-    font-size: 5px;
+    left:90px;
+    font-size: 20px;
     text-overflow: ellipsis;
     white-space: nowrap;
     width: 220px;
@@ -210,7 +210,7 @@ p.text.popup-text-li{
 p.text.popup-date{
     position: absolute;
     left:10px;
-    font-size: 5px;
+    font-size: 15px;
     font-weight: bold;
 }
 

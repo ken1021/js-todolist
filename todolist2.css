@@ -17,17 +17,10 @@ body{
     overflow: hidden;
 }
 
-/* .container::before {
-    content:"";
-    width:380px;
-    height:640px;
-    background-color:rgba(0,0,0,0.9);
-    z-index: 999;
-    position: absolute;
-    border-radius: 20px;
-    visibility: hidden;
-    
-} */
+
+/*--------------------------------head-------------------------------------*/
+
+
 
 .header{
     position: relative;
@@ -38,7 +31,25 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+.history{
+    width:30px;
+    height:30px;
+    position: absolute;
+    top:20px;
+    right:30px;
+    
+    
+}
+.history i{
+    font-size: 30px;
+    color:#6eb200;
+    text-shadow: 1px 3px 5px #000;
+}
+.history i:hover{
+    cursor: pointer;
+    
+    transform: rotate(45deg);
+}
 #date{
     position: absolute;
     bottom: 10px;
@@ -46,6 +57,9 @@ body{
     font-size: 22px;
     color:white;
 }
+
+
+/*--------------------------------Content-------------------------------------*/
 .content{
     width:380px;
     height:380px;
@@ -119,7 +133,7 @@ ul{ margin:0;
 }
 
 
-
+/*---------------------af0000-----------footer input Add to do-------------------------------------*/
 .add-item{
     position: relative;
     width:360px;
@@ -136,6 +150,10 @@ ul{ margin:0;
     color:  #6eb200;
     font-size: 40px;
 }
+
+.add-item i:hover{
+    transform: scale(1.15)
+}
 .add-item input{
     position: absolute;
     left:50px;
@@ -147,6 +165,7 @@ ul{ margin:0;
     font-size: 20px;
     outline: none;
 }
+
 .add-item input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     color:  #6eb200;
     font-family: 'Titillium Web', sans-serif;
@@ -168,7 +187,7 @@ ul{ margin:0;
     font-size: 20px;
 }
 
-
+/*--------------------------------PopUP History content-------------------------------------*/
 .popup{
     position: fixed;
     top:0;
@@ -196,31 +215,6 @@ ul{ margin:0;
 
 }
 
-p.text.popup-text-li{
-    position: absolute;
-    left:90px;
-    font-size: 20px;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    width: 220px;
-
-}
-p.text.popup-date{
-    position: absolute;
-    left:10px;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-.display{
-    display:block;
-}
-
-i.history-trash{
-    position: absolute;
-    left:310px;
-}
-
 .popup-head-text{
 
     position: absolute;
@@ -231,39 +225,6 @@ i.history-trash{
     color:white;
 
 
-}
-
-.clear i{
-    position: absolute;
-    left:45%;
-    top:620px;
-    font-size: 40px;
-    color:#fff;
-    z-index: 10000;
-}
-.clear i:hover{
-    cursor: pointer;
-    text-shadow: 1px 3px 5px #000;
-    transform: rotate(45deg);
-}
-.history{
-    width:30px;
-    height:30px;
-    position: absolute;
-    top:20px;
-    right:30px;
-    
-    
-}
-.history i{
-    font-size: 30px;
-    color:#6eb200;
-    text-shadow: 1px 3px 5px #000;
-}
-.history i:hover{
-    cursor: pointer;
-    
-    transform: rotate(45deg);
 }
 .close{
     width:30px;
@@ -282,4 +243,54 @@ i.history-trash{
     cursor: pointer;
     text-shadow: 1px 3px 5px #000;
     transform: scale(1.4);
+}
+
+p.text.popup-text-li{
+    position: absolute;
+    left:90px;
+    font-size: 20px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 220px;
+
+}
+p.text.popup-date{
+    position: absolute;
+    left:10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+
+
+
+i.history-trash{
+    position: absolute;
+    left:310px;
+    width:20px;
+}
+
+.fa-copy:hover{
+    color:#6eb200;
+    cursor: pointer;}
+
+
+.clear i{
+    position: absolute;
+    left:45%;
+    top:620px;
+    font-size: 40px;
+    color:#fff;
+    z-index: 10000;
+}
+.clear i:hover{
+    cursor: pointer;
+    text-shadow: 1px 3px 5px #000;
+    transform: rotate(45deg);
+}
+
+
+/*--------------------Toggle List content display on popup history List or NOT ------------------------*/
+.display{
+    display:block;
 }
